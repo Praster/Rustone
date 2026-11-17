@@ -72,22 +72,6 @@ En Windows la app descarga sola `yt-dlp` y `ffmpeg` la primera vez y mantiene `y
 
 Herramientas externas: [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) y [`ffmpeg`](https://ffmpeg.org/).
 
-## Requisitos
-
-1. **Rust** estable: <https://rustup.rs> (en Windows, además las *Build Tools* de Visual Studio con «Desarrollo de escritorio con C++»).
-2. **Linux:** `sudo apt install libasound2-dev pkg-config libx11-dev libxkbcommon-dev libwayland-dev libgl1-mesa-dev ffmpeg`
-3. **macOS:** `brew install ffmpeg`
-4. **Windows:** nada más; `yt-dlp` y `ffmpeg` se descargan solos.
-
-## Instalación y uso
-
-```bash
-git clone https://github.com/<tu-usuario>/rustone.git
-cd rustone
-cargo run --release
-```
-
-Si algo falla, ejecuta `cargo run` (sin `--release`) para ver los errores; también se guardan en `crash.log`.
 
 ### Dónde se guardan los datos
 - Windows: `%APPDATA%\rustone`
